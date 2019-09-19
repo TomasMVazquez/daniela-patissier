@@ -7,7 +7,7 @@
       </button>
 
       <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
+        <ul id="navUl" class="navbar-nav">
           <li class="nav-item active">
             <a class="nav-link" href="/">Home</a>
           </li>

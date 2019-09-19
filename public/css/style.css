@@ -41,7 +41,9 @@ h2{
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  height: 100vh;
+  /* height: 100vh; */
+  padding: 20px;
+  text-align: center;
 }
 
 /* INDEX  ---------------------------------------------------------------- Index */
@@ -72,6 +74,7 @@ h2{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .imgSobre{
@@ -192,8 +195,8 @@ footer a:hover{
     font-size: 3em;
   }
   .contenedorMain{
-    padding: 20px 0px;
-    height: 80vh;
+    /* padding: 20px 0px; */
+    height: 90vh;
   }
   .imgIndex{
     display: flex;
@@ -201,10 +204,11 @@ footer a:hover{
     justify-content: center;
     align-items: center;
     height: 100%;
+    padding-left: 10px;
   }
   .imgIndex img{
     height: 100%;
-    padding: 20px;
+    /* padding: 20px; */
   }
   .tituloIndex{
     background-image: url('');
@@ -213,7 +217,7 @@ footer a:hover{
 
   .contenedorSobre{
     padding: 20px;
-    height: 80vh;
+    height: 100vh;
   }
 
   .imgSobre{
@@ -226,6 +230,8 @@ footer a:hover{
 
   .imgSobre img{
     height: 100%;
+    right: -250px;
+    position: absolute;
     box-shadow: 0px 13px 21px -10px rgba(0, 0, 0, 0.3);
     border-radius: 50%;
   }
@@ -234,7 +240,7 @@ footer a:hover{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* box-shadow: 0px 13px 21px -10px rgba(0, 0, 0, 0.3); */
+    background-color: rgba(255, 255, 255, 0.8);
   }
 }
 /* Desktops -------------------------------------------------------------------- Desktops ------*/
@@ -249,12 +255,16 @@ footer a:hover{
     justify-content: flex-end;
   }
 /* SOBRE MI ----------------------------------------------------------- Sobre mi */
+  .contenedorPrincipal{
+    text-align: left;
+  }
 
   .contenedorSobre{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    height: auto;
   }
 
   .imgSobre{
@@ -262,11 +272,13 @@ footer a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: auto;
   }
 
   .imgSobre img{
     width: 100%;
     height: 60%;
+    right: auto;
     box-shadow: 0px 13px 21px -10px rgba(0, 0, 0, 0.3);
     border-radius: 50%;
   }
