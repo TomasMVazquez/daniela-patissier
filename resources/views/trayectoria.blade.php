@@ -9,7 +9,7 @@
 
   <div class="contenedorTrayectoria">
 
-    <div class="trayectoriaCard col-7" style="align-self: flex-start;">
+    <div class="trayectoriaCard col-12 col-lg-7" style="align-self: flex-start;">
       <div class="trayTitle">
         <h3>2017 - Actual</h3>
         <h5><b>Pastelera y Panadera</b></h5>
@@ -30,7 +30,7 @@
       </div>
     </div>
 
-    <div class="trayectoriaCard col-7" style="align-self: flex-end;">
+    <div class="trayectoriaCard col-12 col-lg-7" style="align-self: flex-end;">
       <div class="trayTitle">
         <h3>2018 - Actual</h3>
         <h5><b>Ayudante de pasteleria</b></h5>
