@@ -1,6 +1,5 @@
 /* Importamos la librería bootstrap*/
-@import url('bootstrap.css');
-
+/* @import url('bootstrap.css'); */
 /* Importamos los iconos */
 @import url('https://use.fontawesome.com/releases/v5.8.1/css/all.css');
 
@@ -33,25 +32,25 @@ h2{
   font-size: 2.5em;
 }
 
+.navAlign{
+  justify-content: flex-end;
+}
+
+.navTextAlig{
+  text-align: end;
+}
+
 .divider{
   border: solid 1px #666;
 }
 
-.contenedorPrincipal{
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  /* height: 100vh; */
-  padding: 20px;
-  text-align: center;
-}
 
 /* INDEX  ---------------------------------------------------------------- Index */
 .contenedorMain{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  height: 100vh;
+  height: 80vh;
 }
 
 .imgIndex{
@@ -63,12 +62,20 @@ h2{
   flex-direction: column;
   justify-content: center;
   background-image: url(../imgs/dani_utensilios.png);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: right center;
+  background-position: left center;
 }
 
 /* SOBRE MI ----------------------------------------------------------- Sobre mi */
+
+.contenedorPrincipal{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 20px;
+  text-align: center;
+}
 
 .contenedorSobre{
   display: flex;
@@ -80,6 +87,11 @@ h2{
 .imgSobre{
   display: none;
 }
+
+.imgPast{
+  display: none;
+}
+
 /* TRAYECTORIA ------------------------------------------------------Trayectoria */
 .titleTrayectoria h2{
   justify-content: center;
@@ -257,38 +269,59 @@ footer a:hover{
 /* SOBRE MI ----------------------------------------------------------- Sobre mi */
   .contenedorPrincipal{
     text-align: left;
+    height: 100vh;
   }
 
   .contenedorSobre{
-    display: flex;
-    flex-direction: row;
+    /* display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-around;
-    height: auto;
+    justify-content: space-around; */
   }
 
   .imgSobre{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-  }
-
-  .imgSobre img{
-    width: 100%;
-    height: 60%;
-    right: auto;
-    box-shadow: 0px 13px 21px -10px rgba(0, 0, 0, 0.3);
-    border-radius: 50%;
+    display: none;
   }
 
   .sobre{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    /* box-shadow: 0px 13px 21px -10px rgba(0, 0, 0, 0.3); */
+    justify-content: flex-start;
   }
+
+  .pastConteiner{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+
+  .imgPast{
+    display: block;
+    width: 60%;
+  }
+  .imgPast img{
+    width: 80%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .boxAbout{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .boxLeft{
+    align-self: flex-start;
+  }
+
+  .boxRight{
+    align-self: flex-end;
+  }
+
+
+
 /* CREACIONES ----------------------------------------------------------- CREACIONEs */
   .conteinerImgs{
 

@@ -7,6 +7,7 @@
     <meta name="description" content="Descripción de la empresa">
     <title>@yield('pageTitle')</title>
     <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="/css/bootstrap.css">   
     <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
